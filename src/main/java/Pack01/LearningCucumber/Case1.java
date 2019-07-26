@@ -10,7 +10,7 @@ import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 
-public class Case01 {
+public class Case1 {
 	WebDriver driver;
 	@Given("The browser is configured and TestMe URL is opened")
 	public void the_browser_is_configured_and_TestMe_URL_is_opened() throws InterruptedException {
@@ -72,7 +72,7 @@ public class Case01 {
 	public void submit_button_is_clicked() throws InterruptedException {
 	    // Write code here that turns the phrase above into concrete actions
 //	    throw new cucumber.api.PendingException();
-		Thread.sleep(15000);
+//		Thread.sleep(15000);
 		driver.findElement(By.xpath("//input[@name='Submit']")).click();
 	}
 	@Then("Login {string} is given")

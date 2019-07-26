@@ -6,8 +6,9 @@ import io.cucumber.junit.Cucumber;
 import io.cucumber.junit.CucumberOptions;
 
 @RunWith(Cucumber .class)
-@CucumberOptions(features="Feaatures",glue="Case01",/*tags= {"@Smoke"},*/
-plugin={"html:target/cucumber-htmlreport.html"})
+@CucumberOptions(features="Features",glue="Pack01.LearningCucumber",plugin = {"json:target/cucumber.json"})
+//@CucumberOptions(features="Features",glue="Pack01.LearningCucumber",/*tags= {"@Smoke"},*/
+//plugin={"html:target/cucumber-htmlreport.html"})
 public class SendToJenkins {
-
+	
 }
